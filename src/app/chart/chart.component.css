@@ -1,0 +1,80 @@
+.chart-box{
+  width: 839px;
+  height: 264px;
+  top: 122px;
+  left: 465px;
+  background-color: white;
+  position: absolute;
+  z-index: -3;
+}
+
+.date-chart{
+  width: 150px;
+  height: 13px;
+  top: 21px;
+  left: 700px;
+  font-family: 'Neo Sans Arabic';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12.9px;
+  align-items: center;
+  color: #1C1C28;
+  position: absolute;
+  font-weight: bold;
+}
+
+.namedate{
+  width: 241.89px;
+  height: 13px;
+  top: 38px;
+  left: 580px;
+  position: absolute;
+}
+
+.use-date{
+  width: 792.42px;
+  height: 19px;
+  top: 233.44px;
+  left: 23.84px;
+  position: absolute;
+}
+
+.yearly{
+  width: 76.37px;
+  height: 30.28px;
+  top: 23px;
+  left: 23px;
+  border-radius: 8.07px;
+  position: absolute;
+}
+.min-chart{
+  width: 795.3px;
+  height: 137px;
+  top: 84px;
+  left: 23px;
+  position: absolute;
+}
+
+
+/* Tablet Styles */
+@media  (max-width: 768px ) {
+
+.chart-box{
+  transform: scale(0.7);
+  position: absolute;
+  left: 250px;
+}
+
+}
+
+/* small mobile :320px. */
+@media (max-width: 320px) {
+
+  .chart-box{
+    transform: scale(1.2);
+    position: absolute;
+    left: 105px;
+    top: 200px;
+  }
+}
+

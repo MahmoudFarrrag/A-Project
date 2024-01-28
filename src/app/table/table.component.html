@@ -1,0 +1,107 @@
+
+
+<table class="table-box" >
+  <p-table class="table-inside" [value]="item" [tableStyle]="{ 'min-width': '50rem' }"
+  [globalFilterFields]="['ticketPrice','ticketPrice2','ticketPrice3','ticketPrice3']">
+    <ng-template pTemplate="header">
+      <thead class="head-items">
+        <tr class="each-item">
+          <th>التذكرة</th>
+          <th>عدد مرات الشراء</th>
+          <th>عدد الأشخاص</th>
+          <th>السينمات</th>
+          <th pSortableColumn="items" ><p-sortIcon
+            field="items"></p-sortIcon>
+              قيمي التذكرة </th>
+          <th>رقم التذكرة</th>
+          <th>المستخدم</th>
+          <th>#</th>
+        </tr>
+      </thead>
+    </ng-template>
+    <ng-template pTemplate="body" let-item>
+        <tr>
+          <td>
+            <div class="id1">
+              <div class="first-id">{{item.id}}</div>
+              <div class="ticket-icon"><img [src]="item.ticketIconSrc" alt=""></div>
+              <div class="ticket"><img [src]="item.ticketNumSrc" alt=""></div>
+              <div class="popup"><img [src]="item.popup" alt=""></div>
+              <div class="sells">{{ item.sells }}</div>
+              <div class="ppl-num">{{ item.pplNum }}</div>
+              <div class="cinema">{{ item.cinema }}</div>
+              <div class="ticket-price">{{ item.ticketPrice }}</div>
+              <div class="ticket-num">{{ item.ticketNum }}</div>
+              <div class="user"><img [src]="item.userIconSrc" alt=""></div>
+            </div>
+        </td>
+        </tr>
+
+      <tr>
+        <td>
+        <div class="id2">
+          <div class="first-id">{{item.id}}</div>
+          <div class="ticket-icon"><img [src]="item.ticketIconSrc" alt=""></div>
+          <div class="ticket"><img [src]="item.ticketNumSrc" alt=""></div>
+          <div class="popup"><img [src]="item.popup" alt=""></div>
+          <div class="sells">{{ item.sells }}</div>
+          <div class="ppl-num">{{ item.pplNum }}</div>
+          <div class="cinema">{{ item.cinema }}</div>
+          <div class="ticket-price">{{ item.ticketPrice2 }}</div>
+          <div class="ticket-num">{{ item.ticketNum2 }}</div>
+          <div class="user"><img [src]="item.userIconSrc2" alt=""></div>
+        </div>
+    </td>
+      </tr>
+      <tr>
+        <td>
+        <div class="id3">
+          <div class="first-id">{{item.id}}</div>
+          <div class="ticket-icon"><img [src]="item.ticketIconSrc" alt=""></div>
+          <div class="ticket"><img [src]="item.ticketNumSrc" alt=""></div>
+          <div class="popup"><img [src]="item.popup" alt=""></div>
+          <div class="sells">{{ item.sells }}</div>
+          <div class="ppl-num">{{ item.pplNum }}</div>
+          <div class="cinema">{{ item.cinema }}</div>
+          <div class="ticket-price">{{ item.ticketPrice3 }}</div>
+          <div class="ticket-num">{{ item.ticketNum2 }}</div>
+          <div class="user"><img [src]="item.userIconSrc3" alt=""></div>
+        </div>
+    </td>
+      </tr>
+      <tr>
+        <td>
+        <div class="id4">
+          <div class="first-id">{{item.id}}</div>
+          <div class="ticket-icon"><img [src]="item.ticketIconSrc" alt=""></div>
+          <div class="ticket"><img [src]="item.ticketNumSrc" alt=""></div>
+          <div class="popup"><img [src]="item.popup" alt=""></div>
+          <div class="sells">{{ item.sells }}</div>
+          <div class="ppl-num">{{ item.pplNum }}</div>
+          <div class="cinema">{{ item.cinema }}</div>
+          <div class="ticket-price">{{ item.ticketPrice4 }}</div>
+          <div class="ticket-num">{{ item.ticketNum4 }}</div>
+          <div class="user"><img [src]="item.userIconSrc4" alt=""></div>
+        </div>
+    </td>
+  </tr>
+    </ng-template>
+</p-table>
+</table>
+
+<div class="buttom-bar">
+<div class="button-show">
+  <div class="show">عرض</div>
+  <div class="num-bar"><img src="assets/ICONS/select.png" alt=""></div>
+  <div class="total-num">من اصل 250</div>
+</div>
+<div class="left-nums">
+  <div class="num1">1</div>
+  <div class="num2">2</div>
+  <div class="num3">3</div>
+  <div class="num4">4</div>
+  <div class="num5">5</div>
+  <div class="leftarr"><img src="assets/ICONS/leff.png" alt=""></div>
+  <div class="rightarr"><img src="assets/ICONS/leffff.png" alt=""></div>
+</div>
+</div>
